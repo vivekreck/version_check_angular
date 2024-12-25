@@ -1,0 +1,8 @@
+<div>
+  <h1>Browser and OS Validation</h1>
+  <div [class]="isValid ? 'success' : 'error'">
+    <p [innerHTML]="validationMessage"></p>
+  </div>
+  <h2>Detected Details</h2>
+  <pre>{{ details | json }}</pre>
+</div>
